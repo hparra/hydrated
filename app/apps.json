@@ -1,0 +1,18 @@
+[{
+    "name": "Gmail",
+    "href": "https://mail.google.com/mail/u/0/#inbox",
+    "img_src": "https://mail.google.com/mail/u/0/images/favicon2.ico"
+},{
+    "name": "HootSuite",
+    "href": "https://hootsuite.com/dashboard",
+    "img_src": "https://d2l6uygi1pgnys.cloudfront.net/v1/images/apple-touch-icon@2x.83d40e61.png"
+},{
+    "name": "DropBox",
+    "href": "https://www.dropbox.com/home",
+    "img_src": "https://dt8kf6553cww8.cloudfront.net/static/images/dropbox_webclip-vflO8tEZ4.png"
+},{
+    "name": "Stripe",
+    "href": "https://manage.stripe.com/test/dashboard",
+    "img_src": "https://stripe.com/img/apple-touch-icon/175x175.png"
+
+}]

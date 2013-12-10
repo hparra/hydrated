@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #2e85b8;
+    margin: 0px;
+    font-family: "Arial";
+    color: #ffffff;
+}
+header {
+    height: 48px;
+    background-color: #205c7e;
+}
+h1 {
+   margin: 0 0 0 12px;
+   line-height: 48px;
+}
+.webapp-list {
+    padding: 0;
+    list-style: none;
+}
+.webapp-list li {
+    float: left;
+    background-color: rgba(255,255,255, 0.2);
+    margin: 12px;
+    border-radius: 12px;
+}
+.webapp-list a {
+    display: block;
+    text-decoration: none;
+    padding: 24px;
+}
+.webapp-list figure {
+    width: 128px;
+    text-align: center;
+    margin: 12px;
+}
+.webapp-list img {
+    width: 100%;
+}
+.webapp-list figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 18px;
+    color: #ffffff;
+}

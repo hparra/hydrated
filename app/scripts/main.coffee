@@ -1,10 +1,19 @@
+
+# why didn't browsers standardize this?
+# http://stackoverflow.com/a/5158301
+getParameterByName = (name) ->
+    match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search)
+    match && decodeURIComponent(match[1].replace(/\+/g, ' '))
+
 window.hydrated =
     Models: {}
     Collections: {}
     Views: {}
     Routers: {}
-    init: ->
+    init: (config) ->
         'use strict'
+
+        config = config || '/apps.json'
 
         apps = new this.Collections.Apps
 
@@ -13,15 +22,21 @@ window.hydrated =
 
         apps.fetch
             cache: false
-            url: '/apps.json'
+            url: config
             success: (collection, response, options) ->
                 $el = appsView.render().$el
                 $('#apps').html $el
                 collection
             error: (collection, response, options) ->
-                console.error "Error in fectching apps.json"
-                alert "There was an error retrieving apps data"
+                msg = "Error fetching config at #{config}"
+                console.error msg
+                alert msg
 
 $(document).ready ->
     'use strict'
-    hydrated.init();
+
+    # get config JSON url
+    config = getParameterByName("config")
+
+    # init backbone
+    hydrated.init(config);

@@ -1,7 +1,7 @@
 [{
     "name": "Gmail",
     "href": "https://mail.google.com/mail/u/0/#inbox",
-    "img_src": "https://mail.google.com/mail/u/0/images/favicon2.ico"
+    "img_src": "/images/googlemail-128.png"
 },{
     "name": "HootSuite",
     "href": "https://hootsuite.com/dashboard",
@@ -14,5 +14,8 @@
     "name": "Stripe",
     "href": "https://manage.stripe.com/test/dashboard",
     "img_src": "https://stripe.com/img/apple-touch-icon/175x175.png"
-
+},{
+    "name": "Twitter",
+    "href": "https://twitter.com/",
+    "img_src": "/images/Twitter_logo_blue-256.png"
 }]

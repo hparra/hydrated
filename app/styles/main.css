@@ -33,6 +33,7 @@ h1 {
 .webapp-list figure {
     width: 128px;
     text-align: center;
+    vertical-align: center;
     margin: 12px;
 }
 .webapp-list img {
